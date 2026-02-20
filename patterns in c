@@ -1,0 +1,26 @@
+// write a program to print the usr requested no.pf rows and colomns with the given shape//
+
+#include <stdio.h>
+int main()
+{
+    int row,colomn;
+    printf("enter the no.of rows and colomns:");
+    scanf("%d%d",&row,&colomn);
+    int i;
+    for(int i=0;i<=row-1;i++);
+    {
+        for(int j=0;j<=colomn-1;j++)
+        {
+            if(i==0||j==0||i==row-1||j==colomn-1)
+            {
+                printf("*");
+            }
+            else
+            {
+                printf("  ");
+            }
+            printf("\n");
+        }
+    }
+    return 0;
+}
